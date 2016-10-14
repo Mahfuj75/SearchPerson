@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView_missing_person"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/MyCardViewStyle"
+    android:background="#fffefe"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPaddingTop="0dp"
+    card_view:contentPaddingBottom="0dp">
+    <LinearLayout
+
+        android:layout_margin="20dp"
+        android:id="@+id/row_view_LinearLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/missing_person_image"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:src="@drawable/app_logo"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Mahfujur Rahman Khan"
+            android:fontFamily="sans-serif"
+            android:textSize="24sp"
+            android:textColor="#1a237e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/missing_person_name" />
+        <TextView
+            android:padding="10dp"
+            android:text="Lost"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#3e2723"
+            android:textSize="22sp"
+            android:id="@+id/lost_found_textView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#263238"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="Age"
+                android:id="@+id/age_textView" />
+
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#263238"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:text="LastSeenLocation"
+                android:id="@+id/textView_lastSeenLocation"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

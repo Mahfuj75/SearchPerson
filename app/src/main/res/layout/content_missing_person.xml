@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_missing_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.onenation.oneworld.mahfuj75.searchperson.activity.MissingPersonActivity"
+    tools:showIn="@layout/activity_missing_person"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:id="@+id/missing_parson_search"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="search here"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/fab_margin"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/filter_item"
+                >
+
+            </Spinner>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:theme="@style/SwitchStyle1"
+                android:textAllCaps="false"
+                android:enabled="true"
+                android:checked="true"
+                android:text="Lost" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/SwitchStyle1"
+                android:enabled="true"
+                android:textAllCaps="false"
+                android:checked="true"
+                android:text="Found" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/SwitchStyle1"
+                android:textAllCaps="false"
+                android:text="Criminal" />
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_search"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:theme="@style/ButtonStyle"
+            android:id="@+id/button" />
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/no_missing_person_scrollView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#64263238"
+                    android:text="No Missing Person"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/missingPersonRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
