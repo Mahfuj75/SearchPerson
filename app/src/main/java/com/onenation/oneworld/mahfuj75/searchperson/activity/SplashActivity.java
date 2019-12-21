@@ -1,41 +1,77 @@
 package com.onenation.oneworld.mahfuj75.searchperson.activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.onenation.oneworld.mahfuj75.searchperson.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static int SPLASH_TIME_OUT = 2000;
+    private String district;
+    private String subDistrict;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        new BackgroundTask().execute();
 
 
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-        setContentView(R.layout.activity_splash);
+    }
 
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
+    public class BackgroundTask extends AsyncTask {
 
-                Intent i = new Intent(getApplicationContext(), MissingPersonActivity.class);
-                startActivity(i);
-                finish();
+        Intent intent;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            intent = new Intent(getApplicationContext(), TabViewActivity.class);
+            SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+            district = sharedPreferences.getString("district", "").trim();
+            subDistrict = sharedPreferences.getString("sub_district", "").trim();
+
+
+            if (district.equals("") || subDistrict.equals("")) {
+
+                intent = new Intent(getApplicationContext(), LocationActivity.class);
+
+            } else {
+
+                intent = new Intent(getApplicationContext(), TabViewActivity.class);
+
 
             }
-        },SPLASH_TIME_OUT);
+        }
 
+        @Override
+        protected Object doInBackground(Object[] params) {
 
+            try {
+                int SPLASH_TIME_OUT = 1000;
+                Thread.sleep(SPLASH_TIME_OUT);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Object o) {
+            super.onPostExecute(o);
+//            Pass your loaded data here using Intent
+//            intent.putExtra("data_key", "");
+            startActivity(intent);
+            finish();
+        }
     }
 }

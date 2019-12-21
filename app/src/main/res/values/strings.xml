@@ -6,7 +6,7 @@
     <string name="action_login">Login</string>
     <string name="action_new_account">Create New Account</string>
     <string name="action_add_missing_person">Add Missing Person</string>
-    <string name="action_user_profile">User Profile</string>
+    <string name="action_user_profile">Account</string>
 
 
     <string name="button_search">Search</string>
@@ -27,9 +27,18 @@
 
     <string name="action_create_new_account_in_login">Create New Account</string>
 
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA7yl8rY1RnzFIQ3IZF02obpuy6BzCfyWw</string>
 
 
     <!--Spinner items-->
+
+
+    <string-array name="user_profile_item">
+        <item>Profile Information</item>
+        <item>Missing Person Reports</item>
+        <item>Crime Reports</item>
+        <item>Bookmarks</item>
+    </string-array>
 
     <string-array name="filter_item">
         <item>Search By</item>
@@ -38,11 +47,991 @@
         <item>Age</item>
     </string-array>
 
-    <string-array name="location_name">
+    <string-array name="tabs">
+        <item>All</item>
+        <item>Found</item>
+        <item>Lost</item>
+        <item>Crime</item>
         <item>Location</item>
-        <item></item>
-        <item></item>
-        <item></item>
     </string-array>
+
+    <string-array name="tabs_user">
+        <item>Account Info</item>
+        <item>Found  &amp; Lost</item>
+        <item>Complain</item>
+
+
+    </string-array>
+
+
+    <string-array name="all">
+        <item>All</item>
+    </string-array>
+
+    <string-array name="select">
+        <item>Select</item>
+    </string-array>
+
+
+    <string-array name="complain_subject_short">
+        <item>Select Subject</item>
+        <item>পণ্য</item>
+        <item>পরিবেশ</item>
+        <item>অপরাধ</item>
+        <item>চাহিদা</item>
+    </string-array>
+
+    <string-array name="complain_subject">
+        <item>Select Subject</item>
+        <item>মাদক</item>
+        <item>পরিবেশ</item>
+        <item>মৎস</item>
+        <item>ইভটিজিং</item>
+        <item>বাল্যবিবাহ</item>
+        <item>দ্রব্যমূল্য</item>
+        <item>ভূমি ও জলাশয়</item>
+        <item>পরিবহন ও যোগাযোগ</item>
+        <item>ঔষধ ও চিকিৎসা</item>
+        <item>শিক্ষা সংক্রান্ত</item>
+        <item>নিম্নমানের খাদ্য ও প্রসাধনী</item>
+        <item>বীজ ও সার</item>
+        <item>স্বাস্থ্য সংক্রান্ত</item>
+        <item>লাইসেন্স সংক্রান্ত</item>
+        <item>ভেজাল</item>
+        <item>দূষিত খাদ্য</item>
+        <item>অগ্নি প্রতিরোধ</item>
+        <item>বিদুৎ সংক্রান্ত</item>
+        <item>পাটজাত দ্রব্য</item>
+        <item>মেয়াদ উত্তীর্ণ পণ্য</item>
+        <item>ওজনে কম</item>
+        <item>প্যাকেটজাত পণ্য</item>
+        <item>এসিড সংক্রান্ত</item>
+        <item>ধুমপান</item>
+        <item>দূষিত রক্ত</item>
+        <item>ভোজ্যতেল</item>
+        <item>জুয়া</item>
+        <item>আয়োডিন বিষয়ক</item>
+        <item>ইট প্রস্তুত ও ভাটা স্থাপন</item>
+    </string-array>
+
+    <string-array name="subject_ponno">
+        <item>সকল</item>
+        <item>দ্রব্যমূল্য</item>
+        <item>নিম্নমানের খাদ্য ও প্রসাধনী</item>
+        <item>দূষিত খাদ্য</item>
+        <item>ভোজ্যতেল</item>
+        <item>আয়োডিন বিষয়ক</item>
+        <item>ভেজাল</item>
+        <item>সকল</item>
+        <item>পাটজাত দ্রব্য</item>
+        <item>মেয়াদ উত্তীর্ণ পণ্য</item>
+        <item>প্যাকেটজাত দ্রব্য</item>
+        <item>ওজনে কম</item>
+    </string-array>
+
+
+    <string-array name="subject_porebesh">
+        <item>সকল</item>
+        <item>ভূমি ও জলাশয়</item>
+        <item>বীজ ও সার</item>
+        <item>মৎস</item>
+        <item>পরিবহন ও যোগাযোগ</item>
+        <item>ইটভাটা</item>
+        <item>বিদ্যুৎ সংক্রান্ত</item>
+    </string-array>
+
+    <string-array name="subject_oporadh">
+        <item>সকল</item>
+        <item>মাদক</item>
+        <item>ইভটিজিং</item>
+        <item>বাল্যবিবাহ</item>
+        <item>ধূমপান</item>
+        <item>জুয়া</item>
+        <item>এসিড সংক্রান্ত</item>
+        <item>নির্বাচন</item>
+    </string-array>
+
+    <string-array name="subject_chahida">
+        <item>সকল</item>
+        <item>শিক্ষা সংক্রান্ত</item>
+        <item>ঔষধ ও চিকিৎসা</item>
+        <item>স্বাস্থ্য সংক্রান্ত</item>
+        <item>এসিড সংক্রান্ত</item>
+        <item>লাইসেন্স সংক্রান্ত</item>
+        <item>দূষিত রক্ত</item>
+    </string-array>
+
+
+    <string-array name="division_bangladesh">
+        <item>Select</item>
+        <item>ঢাকা</item>
+        <item>রাজশাহী</item>
+        <item>চট্টগ্রাম</item>
+        <item>খুলনা</item>
+        <item>ময়মনসিংহ</item>
+        <item>রংপুর</item>
+        <item>সিলেট</item>
+        <item>বরিশাল</item>
+    </string-array>
+
+    <string-array name="dhaka_division">
+        <item>Select</item>
+        <item>ঢাকা</item>
+        <item>গাজীপুর</item>
+        <item>টাঙ্গাইল</item>
+        <item>গোপালগঞ্জ</item>
+        <item>কিশোরগঞ্জ</item>
+        <item>নারায়ণগঞ্জ</item>
+        <item>নরসিংদী</item>
+        <item>ফরিদপুর</item>
+        <item>মাদারীপুর</item>
+        <item>মানিকগঞ্জ</item>
+        <item>মুন্সীগঞ্জ</item>
+        <item>শরীয়তপুর</item>
+        <item>রাজবাড়ী</item>
+    </string-array>
+
+    <string-array name="rajshahi_division">
+        <item>Select</item>
+        <item>রাজশাহী</item>
+        <item>নওয়াবগঞ্জ</item>
+        <item>জয়পুরহাট</item>
+        <item>নওগাঁ</item>
+        <item>নাটোর</item>
+        <item>পাবনা</item>
+        <item>বগুড়া</item>
+        <item>সিরাজগঞ্জ</item>
+    </string-array>
+
+    <string-array name="chittagong_division">
+        <item>Select</item>
+        <item>চট্টগ্রাম</item>
+        <item>কক্সবাজার</item>
+        <item>কুমিল্লা</item>
+        <item>খাগড়াছড়ি</item>
+        <item>চাঁদপুর</item>
+        <item>নোয়াখালী</item>
+        <item>ফেনী</item>
+        <item>বান্দরবান</item>
+        <item>ব্রাহ্মণবাড়ীয়া</item>
+        <item>রাঙ্গামাটি</item>
+        <item>লক্ষ্মীপুর</item>
+    </string-array>
+
+    <string-array name="khulna_division">
+        <item>Select</item>
+        <item>খুলনা</item>
+        <item>কুষ্টিয়া</item>
+        <item>চুয়াডাঙ্গা</item>
+        <item>ঝিনাইদহ</item>
+        <item>নড়াইল</item>
+        <item>বাগেরহাট</item>
+        <item>মাগুরা</item>
+        <item>মেহেরপুর</item>
+        <item>যশোর</item>
+        <item>সাতক্ষীরা</item>
+    </string-array>
+    <string-array name="mymensingh_division">
+        <item>Select</item>
+        <item>ময়মনসিংহ</item>
+        <item>জামালপুর</item>
+        <item>নেত্রকোনা</item>
+        <item>শেরপুর</item>
+    </string-array>
+    <string-array name="rangpur_division">
+        <item>Select</item>
+        <item>রংপুর</item>
+        <item>কুড়িগ্রাম</item>
+        <item>গাইবান্ধা</item>
+        <item>ঠাকুরগাঁও</item>
+        <item>দিনাজপুর</item>
+        <item>নীলফামারী</item>
+        <item>পঞ্চগড়</item>
+        <item>লালমনিরহাট</item>
+    </string-array>
+
+    <string-array name="sylhet_division">
+        <item>Select</item>
+        <item>সিলেট</item>
+        <item>মৌলভীবাজার</item>
+        <item>সুনামগঞ্জ</item>
+        <item>হবিগঞ্জ</item>
+    </string-array>
+
+    <string-array name="barisal_division">
+        <item>Select</item>
+        <item>বরিশাল</item>
+        <item>ঝালকাঠি</item>
+        <item>পটুয়াখালী</item>
+        <item>পিরোজপুর</item>
+        <item>বরগুনা</item>
+        <item>ভোলা</item>
+    </string-array>
+
+
+    <string-array name="dhake_city_copporation">
+        <item>Select</item>
+        <item>ঢাকা উত্তর সিটি কর্পোরেশন</item>
+        <item>ঢাকা দক্ষিণ সিটি কর্পোরেশন</item>
+        <item>গাজীপুর সিটি কর্পোরেশন</item>
+        <item>নারায়ণগঞ্জ সিটি কর্পোরেশন</item>
+    </string-array>
+
+
+    <string-array name="rajshahi_city_corporation">
+        <item>Select</item>
+        <item>রাজশাহী সিটি কর্পোরেশন</item>
+    </string-array>
+
+    <string-array name="chittagong_city_corporation">
+        <item>Select</item>
+        <item>চট্টগ্রাম সিটি কর্পোরেশন</item>
+        <item>কুমিল্লা সিটি কর্পোরেশন</item>
+    </string-array>
+
+    <string-array name="khulna_city_corporation">
+        <item>Select</item>
+        <item>খুলনা সিটি কর্পোরেশন</item>
+    </string-array>
+
+    <string-array name="mymensingh_city_corporation">
+        <item>Select</item>
+    </string-array>
+
+    <string-array name="rangpur_city_corporation">
+        <item>Select</item>
+        <item>রংপুর সিটি কর্পোরেশন</item>
+    </string-array>
+
+    <string-array name="sylhet_city_corporation">
+        <item>Select</item>
+        <item>সিলেট সিটি কর্পোরেশন</item>
+    </string-array>
+
+    <string-array name="barisal_city_corporation">
+        <item>Select</item>
+        <item>বরিশাল সিটি কর্পোরেশন</item>
+    </string-array>
+
+    <string-array name="district_bangladesh">
+        <item>All</item>
+        <item>বরগুনা</item>
+        <item>বরিশাল</item>
+        <item>ভোলা</item>
+        <item>ঝালকাঠি</item>
+        <item>পটুয়াখালী</item>
+        <item>পিরোজপুর</item>
+        <item>বান্দরবান</item>
+        <item>ব্রাহ্মণবাড়ীয়া</item>
+        <item>চাঁদপুর</item>
+        <item>চট্টগ্রাম</item>
+        <item>কুমিল্লা</item>
+        <item>কক্সবাজার</item>
+        <item>ফেনী</item>
+        <item>খাগড়াছড়ি</item>
+        <item>লক্ষ্মীপুর</item>
+        <item>নোয়াখালী</item>
+        <item>রাঙ্গামাটি</item>
+        <item>ঢাকা</item>
+        <item>ফরিদপুর</item>
+        <item>গাজীপুর</item>
+        <item>গোপালগঞ্জ</item>
+        <item>কিশোরগঞ্জ</item>
+        <item>মাদারীপুর</item>
+        <item>মানিকগঞ্জ</item>
+        <item>মুন্সীগঞ্জ</item>
+        <item>নারায়ণগঞ্জ</item>
+        <item>নরসিংদী</item>
+        <item>রাজবাড়ী</item>
+        <item>শরীয়তপুর</item>
+        <item>টাঙ্গাইল</item>
+        <item>বাগেরহাট</item>
+        <item>চুয়াডাঙ্গা</item>
+        <item>যশোর</item>
+        <item>ঝিনাইদহ</item>
+        <item>খুলনা</item>
+        <item>কুষ্টিয়া</item>
+        <item>মাগুরা</item>
+        <item>মেহেরপুর</item>
+        <item>নড়াইল</item>
+        <item>সাতক্ষিরা</item>
+        <item>জামালপুর</item>
+        <item>ময়মনসিংহ</item>
+        <item>নেত্রকোনা</item>
+        <item>শেরপুর</item>
+        <item>বগুড়া</item>
+        <item>জয়পুরহাট</item>
+        <item>নওগাঁ</item>
+        <item>নাটোর</item>
+        <item>নওয়াবগঞ্জ</item>
+        <item>পাবনা</item>
+        <item>রাজশাহী</item>
+        <item>সিরাজগঞ্জ</item>
+        <item>দিনাজপুর</item>
+        <item>গাইবান্ধা</item>
+        <item>কুড়িগ্রাম</item>
+        <item>লালমনিরহাট</item>
+        <item>নীলফামারী</item>
+        <item>পঞ্চগড়</item>
+        <item>রংপুর</item>
+        <item>ঠাকুরগাঁও</item>
+        <item>হবিগঞ্জ</item>
+        <item>মৌলভীবাজার</item>
+        <item>সুনামগঞ্জ</item>
+        <item>সিলেট</item>
+    </string-array>
+
+
+    <string-array name="d_dhaka">
+        <item>All</item>
+        <item>আদাবর</item>
+        <item>আগারগাঁও</item>
+        <item>বাড্ডা</item>
+        <item>বংশাল</item>
+        <item>বিমান বন্দর</item>
+        <item>ক্যান্টনমেন্ট</item>
+        <item>চকবাজার</item>
+        <item>দক্ষিণ খান</item>
+        <item>দারুস সালাম</item>
+        <item>ধানমন্ডি</item>
+        <item>ডেমরা</item>
+        <item>কোতোয়ালী</item>
+        <item>গেন্ডারিয়া</item>
+        <item>গুলশান</item>
+        <item>হাজারীবাগ</item>
+        <item>যাত্রাবাড়ি</item>
+        <item>কদমতলী</item>
+        <item>কাফরুল</item>
+        <item>কলাবাগান</item>
+        <item>কামরাঙ্গী চর</item>
+        <item>খিলক্ষেত</item>
+        <item>খিলগাঁও</item>
+        <item>লালবাগ</item>
+        <item>মিরপুর</item>
+        <item>মোহাম্মদপুর</item>
+        <item>মতিঝিল</item>
+        <item>নতুন বাজার</item>
+        <item>পল্লবী</item>
+        <item>পল্টন</item>
+        <item>রমনা</item>
+        <item>রামপুরা</item>
+        <item>সবুজবাগ</item>
+        <item>শাহবাগ</item>
+        <item>শের-ই-বাংলা নগর</item>
+        <item>শ্যামপুর</item>
+        <item>সুত্রাপুর</item>
+        <item>তেজগাঁও</item>
+        <item>তুরাগ</item>
+        <item>উত্তরা</item>
+    </string-array>
+
+
+    <string-array name="d_jamalpur">
+
+        <item>All</item>
+        <item>বকশীগঞ্জ</item>
+        <item>দেওয়ানগঞ্জ</item>
+        <item>ইসলামপুর</item>
+        <item>জামালপুর সদর</item>
+        <item>মাদারগঞ্জ</item>
+        <item>মেলান্দহ</item>
+        <item>সরিষাবাড়ি</item>
+
+    </string-array>
+
+    <string-array name="d_mymensingh">
+
+        <item>All</item>
+        <item>ভালুকা</item>
+        <item>ধোবাউরা</item>
+        <item>ফুলবাড়িয়া</item>
+        <item>গফফারগণ</item>
+        <item>গৌরীপুর</item>
+        <item>হালুয়াঘাট</item>
+        <item>ঈশ্বরগঞ্জ</item>
+        <item>ময়মনসিংহ সদর</item>
+        <item>মুক্তাগাছা</item>
+        <item>ফুলপুর</item>
+        <item>নান্দাইল</item>
+        <item>তারাখান্দা</item>
+        <item>ত্রিশাল</item>
+
+
+    </string-array>
+
+    <string-array name="d_netrakona">
+        <item>All</item>
+        <item>আটপাড়া</item>
+        <item>বারহাট্টা</item>
+        <item>দুর্গাপুর</item>
+        <item>খালিয়াজুরি</item>
+        <item>কেন্দুয়া</item>
+        <item>মাদান</item>
+        <item>মহানগঞ্জ</item>
+        <item>কলমাকান্দা</item>
+        <item>নেত্রকোনা</item>
+        <item>পূর্বধলা</item>
+
+    </string-array>
+
+    <string-array name="d_sherpur">
+        <item>All</item>
+        <item>ঝিনাইগাতী</item>
+        <item>নালিতাবাড়ি</item>
+        <item>নকলা</item>
+        <item>শেরপুর সদর</item>
+        <item>শ্রীবরদী</item>
+
+    </string-array>
+
+
+    <!--কিশোরগঞ্জ-->
+    <string-array name="d_kisorgong">
+        <item>All</item>
+        <item>বাজিতপুর</item>
+        <item>কটিয়াদি</item>
+        <item>ভৈরব</item>
+        <item>কুলিয়ারচর</item>
+        <item>হোসাইনপুর</item>
+        <item>পাকুন্দিয়া</item>
+        <item>অষ্টগ্রাম</item>
+        <item>তাড়াইল</item>
+        <item>মিঠামইন</item>
+        <item>ইটনা</item>
+        <item>নিকলী</item>
+        <item>করিমগঞ্জ</item>
+        <item>কিশোরগঞ্জ-সদর</item>
+
+    </string-array>
+
+
+    <!--বরগুনা -->
+    <string-array name="d_borguna">
+        <item>All</item>
+        <item>আমতলী</item>
+        <item>বামনা</item>
+        <item>বরগুনা সদর</item>
+        <item>বেতাগী</item>
+        <item>পাথরঘাটা</item>
+        <item>তালতলি</item>
+
+    </string-array>
+
+
+    <!--বরিশাল-->
+    <string-array name="d_borisal">
+        <item>All</item>
+        <item>বাকেরগঞ্জ</item>
+        <item>বানারীপাড়া</item>
+        <item>বাবুগঞ্জ</item>
+        <item>গৌরনদী</item>
+        <item>হিজলা</item>
+        <item>মেহেন্দিগঞ্জ</item>
+        <item>মুলাদি</item>
+        <item>উজিরপুর</item>
+        <item>বরিশাল সদর</item>
+        <item>আগৈলঝারা</item>
+
+    </string-array>
+
+    <!--ভোলা-->
+    <string-array name="d_vola">
+        <item>All</item>
+        <item>ভোলা সদর</item>
+        <item>দৌলতখান</item>
+        <item>তজমুদ্দিন </item>
+        <item>বোরহানউদ্দিন</item>
+        <item>লালমোহন</item>
+        <item>চরফ্যাসন</item>
+        <item>মনপুরা</item>
+
+    </string-array>
+
+
+    <!--ঝালকাঠি-->
+    <string-array name="d_jhalokati">
+        <item>All</item>
+        <item>ঝালকাঠি সদর</item>
+        <item>কাঁঠালিয়া</item>
+        <item>নলছিটি</item>
+        <item>রাজাপুর</item>
+
+    </string-array>
+
+    <!--পটুয়াখালী-->
+    <string-array name="d_potuakhale">
+        <item>All</item>
+        <item>বাউফল</item>
+        <item>গলাচিপা</item>
+        <item>দশমিনা</item>
+        <item>কলাপাড়া</item>
+        <item>পটুয়াখালি সদর</item>
+        <item>মির্জাগঞ্জ</item>
+        <item>দুমকি</item>
+        <item>রাঙ্গাবালি</item>
+
+    </string-array>
+
+
+    <!--পিরোজপুর-->
+    <string-array name="d_pirogpur">
+        <item>All</item>
+        <item>ভাণ্ডারিয়া</item>
+        <item>কাউখালী</item>
+        <item>মঠবাড়িয়া</item>
+        <item>নাজিরপুর</item>
+        <item>স্বরূপকাঠী</item>
+        <item>পিরোজপুর সদর</item>
+        <item>জিয়ানগর</item>
+    </string-array>
+
+
+    <!--বান্দরবান-->
+    <string-array name="d_bandorban">
+        <item>All</item>
+        <item>বান্দরবন সদর</item>
+        <item>থানচি</item>
+        <item>লামা</item>
+        <item>নাইক্ষ্যংছড়ি</item>
+        <item>আলিকদম</item>
+        <item>রোয়াংছড়ি</item>
+        <item>রুমা</item>
+    </string-array>
+
+    <!--ব্রাহ্মণবাড়ীয়া-->
+    <string-array name="d_bramhonbaria">
+        <item>All</item>
+        <item>ব্রাহ্মণবাড়ীয়া সদর</item>
+        <item>আশুগঞ্জ</item>
+        <item>নাসিরনগর</item>
+        <item>নবীনগর</item>
+        <item>সরাইল</item>
+        <item>কসবা</item>
+        <item>আখাউড়া</item>
+        <item>বাঞ্ছারামপুর</item>
+        <item>বিজয়নগর</item>
+    </string-array>
+
+    <!--চট্টগ্রাম-->
+    <string-array name="d_chittagong">
+        <item>All</item>
+        <item>আনোয়ারা</item>
+        <item>বাঁশখালী</item>
+        <item>বোয়ালখালী</item>
+        <item>চন্দনাইশ</item>
+        <item>ফটিকছড়ি</item>
+        <item>হাটহাজারী</item>
+        <item>লোহাগাড়া</item>
+        <item>মীরসরাই</item>
+        <item>পটিয়া</item>
+        <item>রাঙ্গুনিয়া</item>
+        <item>রাউজান</item>
+        <item>সন্দ্বীপ</item>
+        <item>সাতকানিয়া</item>
+        <item>সীতাকুণ্ড</item>
+    </string-array>
+
+    <!--কুমিল্লা-->
+    <string-array name="d_commila">
+        <item>All</item>
+        <item>বরুড়া</item>
+        <item>ব্রাহ্মণপাড়া</item>
+        <item>বুড়িচং</item>
+        <item>কুমিল্লা সদর </item>
+        <item>কুমিল্লা সদর দক্ষিণ</item>
+        <item>চান্দিনা</item>
+        <item>চৌদ্দগ্রাম</item>
+        <item>দাউদকান্দি</item>
+        <item>দেবীদ্বার</item>
+        <item>হোমনা</item>
+        <item>লাকসাম</item>
+        <item>মনোহরগঞ্জ</item>
+        <item>মেঘনা</item>
+        <item>মুরাদনগর</item>
+        <item>নাঙ্গলকোট</item>
+        <item>তিতাস</item>
+    </string-array>
+
+
+    <!--চাঁদপুর-->
+    <string-array name="d_chadpur">
+        <item>All</item>
+        <item>চাঁদপুর সদর</item>
+        <item>হাজীগঞ্জ</item>
+        <item>কচুয়া</item>
+        <item>ফরিদগঞ্জ</item>
+        <item>মতলব উত্তর</item>
+        <item>মতলব দক্ষিণ </item>
+        <item>হাইমচর</item>
+        <item>শাহরাস্তি </item>
+    </string-array>
+
+
+    <!--ফরিদপুর-->
+    <string-array name="d_foridpur">
+        <item>All</item>
+        <item>আলফাডাঙা</item>
+        <item>ভাঙ্গা</item>
+        <item>বোয়ালমারী</item>
+        <item>চরভদ্রাসন</item>
+        <item>ফরিদপুর সদর</item>
+        <item>মধুখালী</item>
+        <item>নগরকান্দা</item>
+        <item>সদরপুর</item>
+        <item>সালথা</item>
+
+    </string-array>
+
+
+    <!--গাজীপুর-->
+    <string-array name="d_gazipur">
+        <item>All</item>
+        <item>গাজীপুর সদর</item>
+        <item>টঙ্গী</item>
+        <item>শ্রীপুর</item>
+        <item>কালিয়াকৈর</item>
+        <item>কাপাসিয়া</item>
+        <item>কালিগঞ্জ</item>
+    </string-array>
+
+
+    <!--গোপালগঞ্জ-->
+    <string-array name="d_gopalgong">
+        <item>All</item>
+        <item>গোপালগঞ্জ সদর</item>
+        <item>কাশিয়ানী</item>
+        <item>কোটালীপাড়া</item>
+        <item>মুকসুদপুর</item>
+        <item>টুংগীপাড়া</item>
+
+    </string-array>
+
+
+    <!--মাদারিপুর-->
+    <string-array name="d_madarypur">
+        <item>All</item>
+        <item>মাদারিপুর সদর</item>
+        <item>কালকিনি</item>
+        <item>রাজৈর</item>
+        <item>শিবচর</item>
+    </string-array>
+
+    <!--মানিকগঞ্জ-->
+    <string-array name="d_manikgong">
+        <item>All</item>
+        <item>মানিকগঞ্জ সদর</item>
+        <item>সিঙ্গাইর</item>
+        <item>শিবালয়</item>
+        <item>সাটুরিয়া</item>
+        <item>হরিরামপুর</item>
+        <item>ঘিওর</item>
+        <item>দৌলতপুর</item>
+    </string-array>
+
+    <!--মুন্সীগঞ্জ-->
+    <string-array name="d_munsygong">
+        <item>All</item>
+        <item>লৌহজং</item>
+        <item>শ্রীনগর</item>
+        <item>মুন্সিগঞ্জ সদর</item>
+        <item>সিরাজদিখান</item>
+        <item>টঙ্গিবাড়ী</item>
+        <item>গজারিয়া</item>
+    </string-array>
+
+    <!--নারায়ণগঞ্জ-->
+    <string-array name="d_narayangong">
+        <item>All</item>
+        <item>আড়াইহাজার</item>
+        <item>সোনারগাঁও</item>
+        <item>বন্দর</item>
+        <item>নারায়নগঞ্জ সদর </item>
+        <item>রূপগঞ্জ</item>
+
+    </string-array>
+
+
+    <!--নরসিংদী-->
+    <string-array name="d_norsingdy">
+        <item>All</item>
+        <item>বেলাবো</item>
+        <item>মনোহরদী</item>
+        <item>নরসিংদী সদর</item>
+        <item>পলাশ</item>
+        <item>রায়পুরা</item>
+        <item>শিবপুর</item>
+    </string-array>
+
+    <!--রাজবাড়ী-->
+    <string-array name="d_rajbary">
+        <item>All</item>
+        <item>রাজবাড়ী সদর</item>
+        <item>বালিয়াকান্দি</item>
+        <item>গোয়ালন্দঘাট</item>
+        <item>পাংশা</item>
+        <item>কালুখালী</item>
+    </string-array>
+
+
+    <!--শরীয়তপুর-->
+    <string-array name="d_soriotpur">
+        <item>All</item>
+        <item>শরীয়তপুর সদর</item>
+        <item>ডামুড্যা</item>
+        <item>নড়িয়া</item>
+        <item>জাজিরা</item>
+        <item>ভেদরগঞ্জ</item>
+        <item>গোসাইরহাট</item>
+    </string-array>
+
+    <!--টাঙ্গাইল-->
+    <string-array name="d_tangail">
+        <item>All</item>
+        <item>টাঙ্গাইল সদর</item>
+        <item>সখিপুর</item>
+        <item>বাসাইল</item>
+        <item>মধুপুর</item>
+        <item>ঘাটাইল</item>
+        <item>কালিহাতী</item>
+        <item>নাগরপুর</item>
+        <item>মির্জাপুর</item>
+        <item>গোপালপুর</item>
+        <item>দেলদুয়ার</item>
+        <item>ভূঞাপুর</item>
+        <item>ধনবাড়ী</item>
+    </string-array>
+
+    <!--বাগেরহাট-->
+    <string-array name="d_bagerhat">
+        <item>All</item>
+        <item>বাগেরহাট সদর</item>
+        <item>চিতলমারি</item>
+        <item>ফকিরহাট</item>
+        <item>কচুয়া</item>
+        <item>মোল্লাহাট</item>
+        <item>মংলা</item>
+        <item>মোড়লগঞ্জ</item>
+        <item>রামপাল</item>
+        <item>শরণখোলা</item>
+    </string-array>
+
+    <!--চুয়াডাঙ্গা-->
+    <string-array name="d_chuadanga">
+        <item>All</item>
+        <item>আলমডাঙ্গা</item>
+        <item>চুয়াডাঙ্গা সদর</item>
+        <item>জীবননগর</item>
+        <item>দামুড়হুদা</item>
+    </string-array>
+
+
+    <!--যশোর-->
+    <string-array name="d_josor">
+        <item>All</item>
+        <item>অভয়নগর</item>
+        <item>বাঘারপাড়া</item>
+        <item>চৌগাছা</item>
+        <item>ঝিকরগাছা</item>
+        <item>কেশবপুর</item>
+        <item>যশোহর সদর</item>
+        <item>মণিরামপুর</item>
+        <item>শার্শা</item>
+    </string-array>
+
+
+    <!--ঝিনাইদহ-->
+    <string-array name="d_jinaidaho">
+        <item>All</item>
+        <item>ঝিনাইদহ সদর</item>
+        <item>মহেশপুর</item>
+        <item>কালীগঞ্জ </item>
+        <item>কোটচাঁদপুর</item>
+        <item>শৈলকুপা</item>
+        <item>হরিণাকুন্ড</item>
+    </string-array>
+
+    <!--খুলনা-->
+    <string-array name="d_khulna">
+        <item>All</item>
+        <item>তেরখাদা</item>
+        <item>বটিয়াঘাটা</item>
+        <item>দাকোপ</item>
+        <item>ডুমুরিয়া</item>
+        <item>দিঘলিয়া</item>
+        <item>কয়রা</item>
+        <item>পাইকগাছা</item>
+        <item>ফুলতলা</item>
+        <item>রূপসা</item>
+    </string-array>
+
+    <!--কুষ্টিয়া-->
+    <string-array name="d_kustia">
+        <item>All</item>
+        <item>ভেড়ামারা</item>
+        <item>দৌলতপুর</item>
+        <item>খোকসা</item>
+        <item>কুমারখালি</item>
+        <item>কুষ্ঠিয়া সদর</item>
+        <item>মিরপুর</item>
+    </string-array>
+
+    <!--মাগুরা-->
+    <string-array name="d_magura">
+        <item>All</item>
+        <item>মাগুরা সদর</item>
+        <item>মোহাম্মদপুর</item>
+        <item>শালিখা</item>
+        <item>শ্রীপুর</item>
+    </string-array>
+
+    <!--মেহেরপুর-->
+    <string-array name="d_meherpur">
+        <item>All</item>
+        <item>গাংনী</item>
+        <item>মেহেরপুর সদর</item>
+        <item>মুজিবনগর</item>
+    </string-array>
+
+    <!--নড়াইল-->
+    <string-array name="d_norile">
+        <item>All</item>
+        <item>নড়াইল সদর</item>
+        <item>কালিয়া</item>
+        <item>লোহাগড়া</item>
+    </string-array>
+
+
+    <!--সাতক্ষীরা-->
+    <string-array name="d_shatkhera">
+        <item>All</item>
+        <item>সাতক্ষীরা সদর</item>
+        <item>আশাশুনি</item>
+        <item>দেবহাটা</item>
+        <item>তালা</item>
+        <item>কলারোয়া</item>
+        <item>কালীগঞ্জ</item>
+        <item>শ্যামনগর</item>
+    </string-array>
+
+
+    <!---->
+    <string-array name="d">
+        <item></item>
+        <item>All</item>
+    </string-array>
+
+
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tab_view">TabViewActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="feet">feet</string>
+    <string name="inch">inch</string>
+    <string name="title_activity_post">খোঁজ</string>
+    <string name="title_activity_user_account">Account</string>
+    <string name="add_image">Add Image</string>
+    <string name="create_account_name">name</string>
+    <string name="create_account_email">e-mail</string>
+    <string name="phone_number">phone-Number</string>
+    <string name="femaleGander">Female</string>
+    <string name="maleGander">Male</string>
+    <string name="city_corporation">City-Corporation</string>
+    <string name="complain_full_description">Complain Full Description</string>
+    <string name="complain_subject">Complain Subject</string>
+    <string name="dd_mm_yyyy">DD-MM-YYYY</string>
+    <string name="date">Date</string>
+    <string name="district">District</string>
+    <string name="division">Division</string>
+    <string name="hh_mm_a_pm">HH : MM a/pm</string>
+    <string name="incident_date">Incident Date</string>
+    <string name="incident_spot_description">Incident Spot Description</string>
+    <string name="incident_time">Incident Time</string>
+    <string name="location">Location</string>
+    <string name="metropolitan">Metropolitan</string>
+    <string name="proof_of_evidence">Proof of Evidence</string>
+    <string name="select">Select</string>
+    <string name="sub_location">Sub-Location</string>
+    <string name="submit_complain">Submit Complain</string>
+    <string name="time">Time</string>
+    <string name="your_information">Your Information</string>
+    <string name="file">file</string>
+    <string name="incident_description">incident description</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_test">TestActivity</string>
 
 </resources>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_add_missing_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="0dp"
+    android:background="#ffffff"
+    android:focusableInTouchMode="true"
+    tools:context="com.onenation.oneworld.mahfuj75.searchperson.activity.AddMissingPersonActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:textSize="17sp"
+                    android:id="@+id/addMissingPersonImageView"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/add_image"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:fontFamily="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Image"
+                    android:theme="@style/ButtonStyle"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/addMissingPersonImageButton"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center">
+                <RadioGroup
+
+                    android:id="@+id/radioGroupAddMissingPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:fontFamily="serif"
+                        android:textSize="17sp"
+                        android:id="@+id/radioButton_found"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hapticFeedbackEnabled="true"
+                        android:theme="@style/MyRadioButton"
+                        android:textAllCaps="false"
+                        android:text="found"/>
+
+                    <RadioButton
+                        android:fontFamily="serif"
+                        android:textSize="17sp"
+                        android:id="@+id/radioButton_lost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hapticFeedbackEnabled="true"
+                        android:theme="@style/MyRadioButton"
+                        android:textAllCaps="false"
+                        android:text="lost"/>
+
+                </RadioGroup>
+
+
+
+
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                <EditText
+                    android:fontFamily="serif"
+                    android:textSize="17sp"
+                    android:id="@+id/editText_missingPerson_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="name"
+                    android:inputType="textCapWords"
+                    android:lines="1" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+                <EditText
+                    android:fontFamily="serif"
+                    android:textSize="17sp"
+                    android:id="@+id/editText_missingPerson_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="parents / guardian / relative  name"
+                    android:inputType="textCapWords"
+                    android:lines="1"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                <EditText
+                    android:fontFamily="serif"
+                    android:textSize="17sp"
+                    android:id="@+id/editText_missingPerson_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="age"
+                    android:inputType="numberDecimal"
+                    android:lines="1"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp"
+                    android:text="Missing Date" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="DD-MM-YYYY"
+                    android:textAlignment="center"
+                    android:textColor="#212121"
+                    android:textSize="17sp"
+                    android:id="@+id/textView_missingPerson_missingDate" />
+
+                <Button
+                    android:fontFamily="serif"
+                    android:layout_weight=".7"
+                    android:theme="@style/ButtonStyle4"
+                    android:text="Select"
+                    android:textAllCaps="false"
+                    android:textSize="17sp"
+                    android:id="@+id/button_missingPerson_missingDate"
+                    android:textAlignment="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Height"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp"
+                    android:text="@string/feet" />
+
+
+                <TextView
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp"
+                    android:text="@string/inch" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:textSize="17sp"
+                    android:layout_width="0dp"
+                    android:id="@+id/spinnerFoot"
+                    android:spinnerMode="dialog"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:textSize="17sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerInch" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Last Seen Location"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17sp"
+                android:id="@+id/textView3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#EEEEEE">
+
+                <TextView
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Location "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Sub-Location"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp"
+                    android:id="@+id/textView2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:textSize="17sp"
+                    android:id="@+id/spinnerAddLocation"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+                <Spinner
+                    android:textSize="17sp"
+                    android:id="@+id/spinnerAddSubLocation"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                <EditText
+                    android:fontFamily="serif-monospace"
+                    android:textSize="17sp"
+                    android:id="@+id/editText_missingPerson_description"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:minLines="6"
+                    android:hint="description"
+                    android:gravity="top|left"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:scrollbars="vertical"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:theme="@style/ButtonStyle2"
+                android:text="Submit"
+                android:id="@+id/button_missingPerson_submit" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

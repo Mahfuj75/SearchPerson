@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_complain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+
+    android:paddingTop="0dp"
+    android:background="#ffffff"
+    android:focusableInTouchMode="true"
+    tools:context="com.onenation.oneworld.mahfuj75.searchperson.activity.AddComplainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="0dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:textSize="17sp"
+                    android:text="@string/your_information" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="#FFFFFF">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupComplain"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:fontFamily="serif"
+                            android:textSize="17sp"
+                            android:id="@+id/radioButton_complain_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hapticFeedbackEnabled="true"
+                            android:theme="@style/MyRadioButton"
+                            android:textAllCaps="false"
+                            android:text="@string/maleGander" />
+
+                        <RadioButton
+                            android:textSize="17sp"
+                            android:fontFamily="serif"
+                            android:id="@+id/radioButton_complain_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hapticFeedbackEnabled="true"
+                            android:theme="@style/MyRadioButton"
+                            android:textAllCaps="false"
+                            android:text="@string/femaleGander" />
+
+                    </RadioGroup>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:fontFamily="serif"
+                            android:textSize="17sp"
+                            android:id="@+id/editText_complainPerson_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="name"
+                            android:inputType="textCapWords"
+                            android:lines="1" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:fontFamily="serif"
+                            android:textSize="17sp"
+                            android:id="@+id/editText_complainPerson_phoneNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="phone number"
+                            android:inputType="phone"
+                            android:lines="1" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:fontFamily="serif"
+                            android:textSize="17sp"
+                            android:id="@+id/editText_complainPerson_nationalId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="national ID / birth-certificate ID"
+                            android:inputType="numberSigned"
+                            android:lines="1" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:fontFamily="serif"
+                            android:paddingBottom="20dp"
+                            android:textSize="17sp"
+                            android:id="@+id/editText_complainPerson_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="present address"
+                            android:minLines="4"
+                            android:maxLines="6"
+                            android:gravity="top|start"
+                            android:inputType="textMultiLine" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:textSize="17sp"
+                    android:text="@string/complain_full_description" />
+
+                <LinearLayout
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/complain_subject"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:textColor="#424242"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Spinner
+                            android:textSize="17sp"
+                            android:layout_weight="1"
+                            android:id="@+id/spinnerComplainSubject"
+                            android:layout_width="0dp"
+                            android:spinnerMode="dialog"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+                        <Spinner
+                            android:textSize="17sp"
+                            android:layout_weight="1"
+                            android:id="@+id/spinnerComplainSubSubject"
+                            android:layout_width="0dp"
+                            android:spinnerMode="dialog"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/incident_date"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:textColor="#424242"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="@string/dd_mm_yyyy"
+                            android:textAlignment="center"
+                            android:textColor="#616161"
+                            android:textSize="17sp"
+                            android:id="@+id/textView_complain_incidentDate" />
+
+                        <Button
+                            android:fontFamily="serif"
+                            android:layout_weight=".7"
+                            android:theme="@style/ButtonStyle4"
+                            android:text="@string/date"
+                            android:textAllCaps="false"
+                            android:textSize="17sp"
+                            android:id="@+id/button_complain_incidentDate"
+                            android:textAlignment="center"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/incident_time"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:textColor="#424242"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:paddingLeft="10dp"
+                            android:paddingRight="0dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hh_mm_a_pm"
+                            android:textAlignment="center"
+                            android:fontFamily="serif"
+                            android:textColor="#616161"
+                            android:textSize="17sp"
+                            android:id="@+id/textView_complain_incidentTime" />
+
+                        <Button
+                            android:fontFamily="serif"
+                            android:layout_weight=".7"
+                            android:theme="@style/ButtonStyle4"
+                            android:text="@string/time"
+                            android:textAllCaps="false"
+                            android:textSize="17sp"
+                            android:id="@+id/button_complain_incidentTime"
+                            android:textAlignment="center"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/proof_of_evidence"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:textColor="#424242"
+                        android:textSize="17sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:paddingLeft="10dp"
+                            android:paddingRight="0dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/file"
+                            android:textAlignment="center"
+                            android:textColor="#616161"
+                            android:textSize="17sp"
+                            android:id="@+id/textView_complain_proof" />
+
+                        <Button
+                            android:fontFamily="serif"
+                            android:layout_weight=".7"
+                            android:theme="@style/ButtonStyle4"
+                            android:text="@string/select"
+                            android:textAllCaps="false"
+                            android:textSize="17sp"
+                            android:id="@+id/button_complain_proof"
+                            android:textAlignment="center"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:textColor="#424242"
+                            android:fontFamily="serif"
+                            android:textSize="17sp"
+                            android:id="@+id/editText_complain_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/incident_description"
+                            android:minLines="6"
+                            android:maxLines="8"
+                            android:gravity="top|start"
+                            android:inputType="textMultiLine" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:textSize="17sp"
+                    android:text="@string/incident_spot_description" />
+
+                <LinearLayout
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+
+                    <RadioGroup
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="RtlSymmetry">
+
+                        <RadioButton
+                            android:fontFamily="serif"
+                            android:checked="true"
+                            android:id="@+id/radioButton_complain_subDistrict"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.97"
+                            android:hapticFeedbackEnabled="true"
+                            android:theme="@style/MyRadioButton"
+                            android:textAllCaps="false"
+                            android:text="@string/sub_location" />
+
+                        <RadioButton
+                            android:fontFamily="serif"
+                            android:id="@+id/radioButton_complain_cityCorporation"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hapticFeedbackEnabled="true"
+                            android:theme="@style/MyRadioButton"
+                            android:textAllCaps="false"
+                            android:text="@string/city_corporation" />
+
+                        <RadioButton
+                            android:visibility="gone"
+                            android:id="@+id/radioButton_complain_metropolitan"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hapticFeedbackEnabled="true"
+                            android:theme="@style/MyRadioButton"
+                            android:textAllCaps="false"
+                            android:text="@string/metropolitan" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="@string/location"
+                        android:textStyle="bold"
+                        android:textColor="#424242"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#FFFFFF">
+
+                        <TextView
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="@string/division"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGreen"
+                            android:textSize="17sp"
+                            android:id="@+id/textView" />
+
+                        <TextView
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="@string/district"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGreen"
+                            android:textSize="17sp"
+                            android:id="@+id/textView_complain_district" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_complain_division"
+                            android:textSize="17sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:spinnerMode="dialog"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/spinner_complain_district"
+                            android:textSize="17sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:spinnerMode="dialog"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewSubLocationComplain"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGreen"
+                            android:textSize="17sp"
+                            android:text="Sub-Location" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent" />
+
+                    <Spinner
+                        android:id="@+id/spinner_complain_subDistrict"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:spinnerMode="dialog"
+                        android:layout_height="wrap_content">
+
+                    </Spinner>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:fontFamily="serif-monospace"
+                            android:textSize="17sp"
+                            android:id="@+id/editText_complain_spot_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="incident spot description"
+                            android:minLines="4"
+                            android:maxLines="6"
+                            android:gravity="top|left"
+                            android:inputType="textMultiLine" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:fontFamily="serif"
+                android:id="@+id/button_complain_submit"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:theme="@style/ButtonStyle2"
+                android:text="@string/submit_complain" />
+
+
+        </LinearLayout>
+</ScrollView>

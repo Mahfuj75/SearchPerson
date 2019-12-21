@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/cardView_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/MyCardViewStyle"
+    android:background="#FFFFFF"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPaddingTop="10dp"
+    card_view:contentPaddingLeft="16dp"
+    card_view:contentPaddingRight="16dp"
+    card_view:contentPaddingBottom="10dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="3dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+
+            android:id="@+id/textViewCommentTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:textColor="@color/colorGreen"
+            android:textSize="12sp"
+            android:fontFamily="serif"
+            android:typeface="sans"
+            android:paddingBottom="10dp"
+            android:text="time" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="2dp"
+                app:civ_border_color="#a6212121"
+                android:id="@+id/comment_imageView"
+                android:src="@drawable/anonymous"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/comment_userNameTextView"
+                    android:fontFamily="serif"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mahfujur Rahman Khan"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+
+                <TextView
+
+                    android:maxLines="8"
+                    android:minLines="1"
+                    android:fontFamily="serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mahfujur Rahman Khan"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:id="@+id/comment_textViewComment" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

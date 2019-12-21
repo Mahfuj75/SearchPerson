@@ -1,19 +1,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#eceff1"
     android:focusableInTouchMode="true"
 
     tools:context="com.onenation.oneworld.mahfuj75.searchperson.activity.LoginActivity">
 
     <!-- Login progress -->
+
     <ProgressBar
         android:id="@+id/login_progress"
         style="?android:attr/progressBarStyleLarge"
@@ -42,21 +44,27 @@
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="serif"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
+                    android:lines="1"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:textSize="17sp" />
 
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:passwordToggleDrawable="@drawable/password_show_selector"
+                app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="serif"
                     android:hint="@string/prompt_password"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
@@ -71,39 +79,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/email_sign_in_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAllCaps="false"
                     android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:theme="@style/ButtonStyle2"
+                    android:fontFamily="serif"
                     android:text="@string/action_sign_in"
-                    />
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:theme="@style/ButtonStyle2" />
+
                 <Button
                     android:id="@+id/email_sign_up_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAllCaps="false"
                     android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:theme="@style/ButtonStyle"
+                    android:fontFamily="serif"
                     android:text="Sign up"
-                    />
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:theme="@style/ButtonStyle" />
 
 
             </LinearLayout>
-            <Button
-                android:id="@+id/email_forget_pass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:layout_weight="1"
-                android:textAlignment="center"
-                android:theme="@style/ButtonStyle3"
-                android:text="forget email or password" />
 
+            <Button
+                android:id="@+id/email_forget_pass_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="forget password"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:theme="@style/ButtonStyle3" />
 
 
             <android.support.design.widget.TextInputLayout
@@ -111,27 +122,25 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:layout_margin="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="serif"
+                    android:text="sign in with Google"
                     android:textAlignment="center"
-                    android:textSize="20sp"
-                    android:text="sign in with Google"/>
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
 
             </android.support.design.widget.TextInputLayout>
 
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/google_sign_in"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-            </com.google.android.gms.common.SignInButton>
-
-
-
-
+                android:layout_height="wrap_content"></com.google.android.gms.common.SignInButton>
 
 
         </LinearLayout>
+
     </ScrollView>
+
 </LinearLayout>

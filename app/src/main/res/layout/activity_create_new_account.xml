@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:id="@+id/activity_create_new_account"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="5dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="5dp"
     android:orientation="vertical"
     android:focusableInTouchMode="true"
+    android:background="#fff"
     tools:context="com.onenation.oneworld.mahfuj75.searchperson.activity.CreateNewAccountActivity">
 
     <ScrollView
@@ -24,36 +27,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
                 <ImageView
                     android:id="@+id/new_account_imageView"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/app_logo"
+                    app:srcCompat="@drawable/add_image"
                     android:layout_weight="1"/>
 
                 <Button
-
+                    android:fontFamily="serif"
                     android:layout_gravity="center"
-
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
                     android:layout_height="wrap_content"
-                    android:text="Add Image"
-                    android:theme="@style/ButtonStyle"
+                    android:text="@string/add_image"
+                    style="@style/ButtonStyle"
                     android:id="@+id/new_account_image_button"
                     android:textAllCaps="false"/>
 
             </LinearLayout>
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textSize="17sp">
                 <EditText
+                    android:fontFamily="serif"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText_new_account_user_name"
-                    android:hint="name"
+                    android:hint="@string/create_account_name"
                     android:lines="1"
                     android:inputType="textCapWords"/>
 
@@ -61,27 +66,31 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textSize="17sp">
 
                 <EditText
+                    android:fontFamily="serif"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText_new_account_user_email"
-                    android:hint="e-mail"
+                    android:hint="@string/create_account_email"
                     android:lines="1"
                     android:inputType="textEmailAddress"/>
 
             </android.support.design.widget.TextInputLayout>
 
 
-
-
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                app:passwordToggleEnabled="true"
+                app:errorEnabled="false"
+                app:passwordToggleDrawable="@drawable/password_show_selector"
+                android:textSize="17sp">
 
                 <EditText
+                    android:fontFamily="serif"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText_new_account_user_password"
@@ -90,16 +99,39 @@
                     android:inputType="textPassword"/>
 
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:errorEnabled="false"
+                app:passwordToggleDrawable="@drawable/password_show_selector"
+                android:textSize="17sp">
+
                 <EditText
+                    android:fontFamily="serif"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText_new_account_user_password_repeat"
                     android:hint="repeat password"
                     android:lines="1"
                     android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:textSize="17sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText_new_account_user_phone"
+                    android:hint="@string/phone_number"
+                    android:lines="1"
+                    android:inputType="phone" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -113,13 +145,16 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_gravity="center"
-                android:paddingBottom="20dp">
+                android:paddingBottom="20dp"
+                android:textSize="17sp">
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     >
+
                     <RadioButton
+                        android:fontFamily="serif"
                         android:id="@+id/radio_new_account_male"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -128,7 +163,9 @@
                         android:theme="@style/MyRadioButton"
                         android:textAllCaps="false"
                         android:text="male"/>
+
                     <RadioButton
+                        android:fontFamily="serif"
                         android:id="@+id/radio_new_account_female"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -144,71 +181,161 @@
 
 
             </LinearLayout>
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText_new_account_user_phone"
-                    android:hint="phone-Number"
-                    android:lines="1"
-                    android:inputType="phone"/>
 
-            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp"
+                    android:text="Date Of Birth" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_new_account_date_of_birth"
+                    android:hint="DD - MM - YYYY"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:lines="1"
+                    android:inputType="date" />
+
+                <Button
+                    android:fontFamily="serif"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/button_new_account_user_date_of_birth"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:theme="@style/ButtonStyle"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
 
 
             <TextView
-                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView_new_account_date_of_birth"
-                android:hint="DD-MM-YYYY"
-                android:textSize="21sp"
-                android:textAlignment="center"
-                android:lines="1"
-                android:inputType="date"/>
+                android:fontFamily="serif"
+                android:text="Location"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp" />
 
-            <Button
-                android:layout_marginTop="20dp"
-                android:id="@+id/button_new_account_user_date_of_birth"
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Date of Birth"
-                android:theme="@style/ButtonStyle"
-                android:textAllCaps="false"/>
+                android:layout_height="1dp"
+                android:background="@color/colorAccent">
+
+            </View>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp">
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1.75">
-                    <EditText
-                        android:id="@+id/editText_new_account_user__location"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="your location"
-                        android:inputType="textPostalAddress"
-                        android:lines="1"/>
+                android:background="#EEEEEE">
 
-                </android.support.design.widget.TextInputLayout>
-
-                <Button
-                    android:id="@+id/button_user_gps_location"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                <TextView
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:text="Use GPS"
-                    android:theme="@style/ButtonStyle"
-                    android:textAllCaps="false"/>
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Location "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Sub-Location"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp"
+                    android:id="@+id/textView2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:textSize="17sp"
+                    android:id="@+id/spinnerAddLocationAccount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+                <Spinner
+                    android:textSize="17sp"
+                    android:id="@+id/spinnerAddSubLocationAccount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
             </LinearLayout>
 
             <Button
+                android:fontFamily="serif"
                 android:layout_marginTop="40dp"
                 android:id="@+id/button_create_new_account"
                 android:layout_width="match_parent"

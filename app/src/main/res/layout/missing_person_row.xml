@@ -5,83 +5,203 @@
     android:layout_height="wrap_content"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:theme="@style/MyCardViewStyle"
-    android:background="#fffefe"
+    android:background="#FFFFFF"
     card_view:cardUseCompatPadding="true"
-    card_view:contentPaddingTop="0dp"
-    card_view:contentPaddingBottom="0dp">
-    <LinearLayout
+    card_view:contentPaddingLeft="16dp"
+    card_view:contentPaddingRight="16dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="3dp">
 
-        android:layout_margin="20dp"
+    <LinearLayout
         android:id="@+id/row_view_LinearLayout"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
-        <ImageView
-            android:padding="10dp"
+
+        <TextView
+            android:fontFamily="serif"
+            android:layout_weight="1"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="Lost"
+            android:textStyle="bold"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="0dp"
+            android:textColor="#000000"
+            android:textSize="21sp"
+            android:textAlignment="center"
+            android:id="@+id/lost_found_textView" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:text="Date"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/missing_person_date"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:text="Time"
+                android:textAlignment="textEnd"
+                android:id="@+id/missing_person_time"
+                android:layout_gravity="end" />
+
+        </LinearLayout>
+
+        <ImageView
             android:id="@+id/missing_person_image"
-            android:cropToPadding="false"
-            android:adjustViewBounds="false"
-            android:src="@drawable/app_logo"
-            android:scaleType="centerInside" />
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="180dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/app_name"
+            card_view:srcCompat="@drawable/no_image" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/image_error"
+            android:text="network error"
+            android:textColor="@color/colorRed"
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="15dp" />
+
 
         <TextView
             android:textStyle="bold"
             android:gravity="center"
-            android:padding="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
             android:text="Mahfujur Rahman Khan"
-            android:fontFamily="sans-serif"
-            android:textSize="24sp"
-            android:textColor="#1a237e"
+            android:fontFamily="serif"
+            android:textSize="22sp"
+            android:textColor="#000000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/missing_person_name" />
-        <TextView
-            android:padding="10dp"
-            android:text="Lost"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#3e2723"
-            android:textSize="22sp"
-            android:id="@+id/lost_found_textView" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <TextView
+                android:fontFamily="serif"
+                android:layout_weight=".6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:text="Last Location:" />
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:paddingBottom="10dp"
+                android:text="LastSeen"
+                android:textAlignment="center"
+                android:id="@+id/textView_lastSeenLocation" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:padding="10dp"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:textColor="#263238"
-                android:layout_width="wrap_content"
+                android:fontFamily="serif"
+                android:layout_weight=".6"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textAlignment="textStart"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:text="Missing Date:"
+                android:id="@+id/textView_lastSeenDateName" />
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:paddingBottom="10dp"
+                android:text="1-11-2016"
+                android:textAlignment="center"
+                android:id="@+id/textView_lastSeenDate" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:text="Age:" />
+
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:textAlignment="center"
                 android:text="Age"
                 android:id="@+id/age_textView" />
 
-            <TextView
-                android:padding="10dp"
-                android:layout_weight="1"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:textColor="#263238"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="textEnd"
-                android:text="LastSeenLocation"
-                android:id="@+id/textView_lastSeenLocation"/>
+
         </LinearLayout>
 
 
 
 
     </LinearLayout>
-
 
 
 </android.support.v7.widget.CardView>
