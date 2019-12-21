@@ -14,7 +14,7 @@
     tools:context="com.onenation.oneworld.mahfuj75.searchperson.activity.UserAccountActivity"
     tools:showIn="@layout/activity_user_account">
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
@@ -25,13 +25,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <android.support.v4.view.ViewPager
+            <androidx.viewpager.widget.ViewPager
                 android:id="@+id/pager_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            </android.support.v4.view.ViewPager>
+            </androidx.viewpager.widget.ViewPager>
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

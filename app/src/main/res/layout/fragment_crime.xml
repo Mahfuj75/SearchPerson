@@ -6,13 +6,13 @@
     tools:context="com.onenation.oneworld.mahfuj75.searchperson.tabFragments.CrimeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/missingPersonRecyclerViewCrimeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_scrollFlags="scroll|enterAlways">
 
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
     <TextView
         android:visibility="visible"

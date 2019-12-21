@@ -1,6 +1,6 @@
 package com.onenation.oneworld.mahfuj75.searchperson.viewHolder;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 

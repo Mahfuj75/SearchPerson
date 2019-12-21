@@ -2,19 +2,16 @@ package com.onenation.oneworld.mahfuj75.searchperson.viewHolder;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.icu.text.SimpleDateFormat;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.RequiresApi;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.onenation.oneworld.mahfuj75.searchperson.R;
 import com.squareup.picasso.Picasso;
-
-import java.util.Calendar;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 

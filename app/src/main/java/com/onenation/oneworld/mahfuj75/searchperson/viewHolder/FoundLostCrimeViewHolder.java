@@ -2,14 +2,13 @@ package com.onenation.oneworld.mahfuj75.searchperson.viewHolder;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.onenation.oneworld.mahfuj75.searchperson.R;
 import com.squareup.picasso.Picasso;

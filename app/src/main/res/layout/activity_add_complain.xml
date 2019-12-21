@@ -79,7 +79,7 @@
 
                     </RadioGroup>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -92,9 +92,9 @@
                             android:hint="name"
                             android:inputType="textCapWords"
                             android:lines="1" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -107,9 +107,9 @@
                             android:hint="phone number"
                             android:inputType="phone"
                             android:lines="1" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -122,9 +122,9 @@
                             android:hint="national ID / birth-certificate ID"
                             android:inputType="numberSigned"
                             android:lines="1" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -140,7 +140,7 @@
                             android:maxLines="6"
                             android:gravity="top|start"
                             android:inputType="textMultiLine" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
 
@@ -383,7 +383,7 @@
 
                     </LinearLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -399,7 +399,7 @@
                             android:maxLines="8"
                             android:gravity="top|start"
                             android:inputType="textMultiLine" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
 
@@ -615,7 +615,7 @@
 
                     </Spinner>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -630,7 +630,7 @@
                             android:maxLines="6"
                             android:gravity="top|left"
                             android:inputType="textMultiLine" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
 

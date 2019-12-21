@@ -3,15 +3,9 @@ package com.onenation.oneworld.mahfuj75.searchperson.activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
-import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Toast;
-
-import com.onenation.oneworld.mahfuj75.searchperson.R;
 
 public class SplashActivity extends AppCompatActivity {
 

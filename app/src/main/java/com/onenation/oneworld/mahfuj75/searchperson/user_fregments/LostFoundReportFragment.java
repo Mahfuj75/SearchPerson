@@ -1,21 +1,19 @@
 package com.onenation.oneworld.mahfuj75.searchperson.user_fregments;
 
 import android.app.AlertDialog;
-import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,7 +27,6 @@ import com.onenation.oneworld.mahfuj75.searchperson.R;
 import com.onenation.oneworld.mahfuj75.searchperson.activity.AddMissingPersonActivity;
 import com.onenation.oneworld.mahfuj75.searchperson.activity.PostActivity;
 import com.onenation.oneworld.mahfuj75.searchperson.objectclass.MissingPerson;
-import com.onenation.oneworld.mahfuj75.searchperson.viewHolder.FoundLostCrimeViewHolder;
 import com.onenation.oneworld.mahfuj75.searchperson.viewHolder.UserPostViewHolder;
 
 /**

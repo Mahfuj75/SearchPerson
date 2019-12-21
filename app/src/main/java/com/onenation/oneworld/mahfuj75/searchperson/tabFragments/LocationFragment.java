@@ -3,10 +3,10 @@ package com.onenation.oneworld.mahfuj75.searchperson.tabFragments;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,8 +25,6 @@ import com.onenation.oneworld.mahfuj75.searchperson.R;
 import com.onenation.oneworld.mahfuj75.searchperson.custom.FirebaseAdapterForPost;
 import com.onenation.oneworld.mahfuj75.searchperson.objectclass.MissingPerson;
 import com.onenation.oneworld.mahfuj75.searchperson.viewHolder.FoundLostCrimeViewHolder;
-
-import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 
 /**
  * A simple {@link Fragment} subclass.
